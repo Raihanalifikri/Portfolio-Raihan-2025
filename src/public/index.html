@@ -15,7 +15,65 @@
         href="https://fonts.googleapis.com/css2?family=Anta&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Code:wght@300..700&family=Grey+Qo&family=Iceland&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .card {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #1C1E22;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
 
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+    </style>
 </head>
 
 <body class="font-[Poppins]">
@@ -30,18 +88,15 @@
                 <li>
                     <a href="#aboutme">About</a>
                 </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+
             </ul>
             <!-- Logo -->
             <div class="text-[25px]">
-                <a href="#"><i class="fa-brands fa-linkedin mr-5"></i></a>
-                <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram mx-5"></i></a>
+                <a href="https://www.linkedin.com/in/raihan-muhammad-alifikri-19a541284/"><i
+                        class="fa-brands fa-linkedin mr-5"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=628998150108&text&type=phone_number&app_absent=0"> <i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/raii.alifikri/"><i class="fa-brands fa-instagram mx-5"></i></a>
             </div>
         </header>
         <div class="">
@@ -74,7 +129,7 @@
     </div>
 
     <!-- About Me Section -->
-    <div class="bg-[#171718]">
+    <div class="bg-[#171718]" id="aboutme">
         <div class="text-white text-4xl font-[Poppins] font-semibold pt-[26px] ml-[80px]">
             <p>About Me</p>
         </div>
@@ -120,36 +175,45 @@
             <p>Experinces</p>
         </div>
         <div class="flex pb-8">
-        <div class="flex text-white ml-[80px] pt-9 gap-[50px]">
-            <div class=""><p>2023-2024</p></div>
-            <div class="flex-col">
-                <p class="pb-4">Ketua OSIS</p>
-                <p class="w-[400px] text-[15px]">Pernah menjabat sebagai Ketua OSIS di SMK IDN Boarding School selama satu tahun. Selama
-                    kepemimpinan, berhasil menyelenggarakan berbagai agenda OSIS dan menjalankan berbagai
-                    tugas sebagai ketua.
+            <div class="flex text-white ml-[80px] pt-9 gap-[50px]">
+                <div class="">
+                    <p>2023-2024</p>
+                </div>
+                <div class="flex-col">
+                    <p class="pb-4">Ketua OSIS</p>
+                    <p class="w-[400px] text-[15px]">Pernah menjabat sebagai Ketua OSIS di SMK IDN Boarding School
+                        selama satu tahun. Selama
+                        kepemimpinan, berhasil menyelenggarakan berbagai agenda OSIS dan menjalankan berbagai
+                        tugas sebagai ketua.
                     </p>
+                </div>
             </div>
-        </div>
-        <div class="flex text-white ml-[68px] pt-9 gap-[50px]">
-            <div class=""><p>2023-2024</p></div>
-            <div class="flex-col">
-                <p class="pb-4">Ketua OSIS</p>
-                <p class="w-[400px] text-[15px]">Pernah menjabat sebagai Ketua OSIS di SMK IDN Boarding School selama satu tahun. Selama
-                    kepemimpinan, berhasil menyelenggarakan berbagai agenda OSIS dan menjalankan berbagai
-                    tugas sebagai ketua.
-                    </p>
-            </div>
-        </div>
-    </div>
-    </div>
+            <div class="flex text-white ml-[68px] pt-9 gap-[50px]">
+                <!-- From Uiverse.io by Javierrocadev -->
+                <div class="card">
+                    <div class="image"><img src="/asset/hasna.png" alt=""></div>
+                    <div class="content">
+                        <a href="#">
+                            <span class="title">
+                                Hasna Medika
+                            </span>
+                        </a>
 
-    <!-- Portfolio -->
-     <div class="bg-[#1C1E22]">
-        <div class="text-white text-4xl font-[Poppins] font-semibold pt-[26px] ml-[80px]" id="aboutme">
-            <p>About Me</p>
+                        <p class="desc">
+                            Konsep landing page sederhana dari sebuah klinik bernama Hasna Medika
+                        </p>
+
+                        <a class="action" href="https://hasna-medika.netlify.app/">
+                            Find out more
+                            <span aria-hidden="true">
+                                →
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-evenly"></div>
-     </div>
+    </div>
 </body>
 
 </html>
